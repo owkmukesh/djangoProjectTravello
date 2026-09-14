@@ -466,21 +466,21 @@
 
 
             <div class="row">
-
+                {% for dest in dests %}
                 <div class="col-lg-4 col-md-6">
                     <div class="single_place">
 
                         <div class="thumb">
                             <img src="{% static 'img/place/1.png' %}" alt="">
-                            <a href="#" class="prise">{{dest1.price}}</a>
+                            <a href="#" class="prise">{{dest.price}}</a>
                         </div>
 
                         <div class="place_info">
                             <a href="destination_details.html">
-                                <h3>{{dest1.name}}</h3>
+                                <h3>{{dest.name}}</h3>
                             </a>
 
-                            <p>{{dest1.desc}}</p>
+                            <p>{{dest.desc}}</p>
 
                             <div class="rating_days d-flex justify-content-between">
 
@@ -503,8 +503,9 @@
 
                     </div>
                 </div>
+                {% endfor%}
 
-
+<!-- 
                 <div class="col-lg-4 col-md-6">
                     <div class="single_place">
 
@@ -540,10 +541,10 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
 
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="single_place">
 
                         <div class="thumb">
@@ -578,10 +579,10 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
 
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="single_place">
 
                         <div class="thumb">
@@ -616,10 +617,10 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
 
 
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="single_place">
 
                         <div class="thumb">
@@ -655,9 +656,9 @@
 
                     </div>
                 </div>
+ -->
 
-
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="single_place">
 
                         <div class="thumb">
@@ -696,7 +697,7 @@
 
             </div>
 
-
+ -->
             <div class="row">
                 <div class="col-lg-12">
                     <div class="more_place_btn text-center">

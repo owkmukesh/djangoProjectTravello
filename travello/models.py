@@ -6,3 +6,4 @@ class Destination:
     name: str
     price: int
     desc: str
+    img: str

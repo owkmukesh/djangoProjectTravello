@@ -4,8 +4,19 @@ from . models import Destination
 # Create your views here.
 def index(request):
     dest1=Destination()
-    dest1.name="Mumbai"
-    dest1.price=1000
-    dest1.desc="The city never sleeps"
+    dest1.name="Hyderabad"
+    dest1.price=800
+    dest1.desc="Biryani First, Sherwani next"
 
-    return render(request,"index.html",{"dest1":dest1})
+    dest2=Destination()
+    dest2.name="Mumbai"
+    dest2.price=1000
+    dest2.desc="The city never sleeps"
+
+    dest3=Destination()
+    dest3.name="Benguluru"
+    dest3.price=900
+    dest3.desc="Industrial Area"
+
+    dests=[dest1,dest2,dest3]
+    return render(request,"index.html",{"dests":dests})
