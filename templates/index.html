@@ -474,8 +474,13 @@
                         <div class="thumb">
                             <img src="{{baseURL}}/{{dest.img}}" alt="">
                             <a href="#" class="prise">{{dest.price}}</a>
+                                <p>Offer: {{ dest.offer }}</p>
                         </div>
-
+                        {% if dest.offer %}
+                            <a href="#" class="prise">Special Offer</a>
+                        {% else %}
+                            <h4>No Offer</h4>
+                        {% endif %}
                         <div class="place_info">
                             <a href="destination_details.html">
                                 <h3>{{dest.name}}</h3>
