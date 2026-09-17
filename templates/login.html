@@ -1,0 +1,23 @@
+<!--
+Source - https://stackoverflow.com/q/74496402
+Posted by Psychzor, modified by community. See post 'Timeline' for change history
+Retrieved 2026-09-17, License - CC BY-SA 4.0
+-->
+<form action="login" method="post">
+    {% csrf_token %}
+<div>
+    <input type="text" id="username" name="username" placeholder="Username">
+</div>
+<p></p>
+<div>
+    <input type="password" id="pass" name="password" placeholder="Password">
+</div>
+
+<input type="submit" value="Sign in">
+</form>
+
+<div>
+    {% for message in messages %}
+    <h3>{{message}}</h3>
+    {% endfor %} 
+</div>
